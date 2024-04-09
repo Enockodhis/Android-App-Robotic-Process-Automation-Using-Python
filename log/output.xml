@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.0 (Python 3.12.2 on win32)" generated="2024-04-09T15:21:38.969542" rpa="false" schemaversion="5">
+<suite id="s1" name="Login" source="C:\Users\pc\Desktop\FANTASY\Tests\Login.robot">
+<test id="s1-t1" name="Login" line="23">
+<kw name="Open Application" owner="AppiumLibrary">
+<arg>http://localhost:4723</arg>
+<arg>platformName=Android</arg>
+<arg>deviceName=2850bf41</arg>
+<arg>appPackage=com.safaricom.mpesa.lifestyle</arg>
+<arg>appActivity=com.mpesa.splash.SplashActivity</arg>
+<arg>automationName=Uiautomator2</arg>
+<doc>Opens a new application to given Appium server.
+Capabilities of appium server, Android and iOS,
+Please check https://github.com/appium/appium/blob/master/docs/en/writing-running-appium/server-args.md
+| *Option*            | *Man.* | *Description*     |
+| remote_url          | Yes    | Appium server url |
+| alias               | no     | alias             |
+| strict_ssl          | No     | allows you to send commands to an invalid certificate host like a self-signed one. |</doc>
+<status status="PASS" start="2024-04-09T15:21:39.599551" elapsed="11.274605"/>
+</kw>
+<kw name="Wait Until Page Contains Element" owner="AppiumLibrary">
+<msg time="2024-04-09T15:21:52.974292" level="INFO">xpath criteria: //android.widget.Button[@resource-id="com.safaricom.mpesa.lifestyle:id/"]</msg>
+<arg>${SIGN-IN-BUTTON}</arg>
+<doc>Waits until element specified with `locator` appears on current page.</doc>
+<status status="PASS" start="2024-04-09T15:21:50.875143" elapsed="2.102353"/>
+</kw>
+<kw name="Click Element" owner="AppiumLibrary">
+<msg time="2024-04-09T15:21:52.983645" level="INFO">Clicking element '//android.widget.Button[@resource-id="com.safaricom.mpesa.lifestyle:id/"]'.</msg>
+<msg time="2024-04-09T15:21:54.296907" level="INFO">xpath criteria: //android.widget.Button[@resource-id="com.safaricom.mpesa.lifestyle:id/"]</msg>
+<arg>${SIGN-IN-BUTTON}</arg>
+<doc>Click element identified by `locator`.</doc>
+<status status="PASS" start="2024-04-09T15:21:52.978489" elapsed="1.319631"/>
+</kw>
+<kw name="Wait Until Page Contains Element" owner="AppiumLibrary">
+<msg time="2024-04-09T15:21:55.926806" level="INFO">xpath criteria: //android.widget.Button[@resource-id="com.android.permissioncontroller:id/permission_allow_button"]
+xpath criteria: //android.widget.Button[@resource-id="com.android.permissioncontroller:id/permission_allow_button"]</msg>
+<arg>${ALLOW-POP-UP}</arg>
+<doc>Waits until element specified with `locator` appears on current page.</doc>
+<status status="PASS" start="2024-04-09T15:21:54.298120" elapsed="1.629679"/>
+</kw>
+<kw name="Click Element" owner="AppiumLibrary">
+<msg time="2024-04-09T15:21:55.934031" level="INFO">Clicking element '//android.widget.Button[@resource-id="com.android.permissioncontroller:id/permission_allow_button"]'.</msg>
+<msg time="2024-04-09T15:21:56.221594" level="INFO">xpath criteria: //android.widget.Button[@resource-id="com.android.permissioncontroller:id/permission_allow_button"]</msg>
+<arg>${ALLOW-POP-UP}</arg>
+<doc>Click element identified by `locator`.</doc>
+<status status="PASS" start="2024-04-09T15:21:55.928478" elapsed="0.294203"/>
+</kw>
+<kw name="Wait Until Page Contains Element" owner="AppiumLibrary">
+<msg time="2024-04-09T15:21:57.556535" level="INFO">xpath criteria: //android.widget.Button[@resource-id="com.safaricom.mpesa.lifestyle:id/"]
+xpath criteria: //android.widget.Button[@resource-id="com.safaricom.mpesa.lifestyle:id/"]</msg>
+<arg>${DUAL-SIM-PAGE}</arg>
+<doc>Waits until element specified with `locator` appears on current page.</doc>
+<status status="PASS" start="2024-04-09T15:21:56.223588" elapsed="1.332947"/>
+</kw>
+<kw name="Click Element" owner="AppiumLibrary">
+<msg time="2024-04-09T15:21:57.561887" level="INFO">Clicking element '//android.widget.Button[@resource-id="com.safaricom.mpesa.lifestyle:id/"]'.</msg>
+<msg time="2024-04-09T15:21:57.749531" level="INFO">xpath criteria: //android.widget.Button[@resource-id="com.safaricom.mpesa.lifestyle:id/"]</msg>
+<arg>${DUAL-SIM-PAGE}</arg>
+<doc>Click element identified by `locator`.</doc>
+<status status="PASS" start="2024-04-09T15:21:57.557772" elapsed="0.192394"/>
+</kw>
+<kw name="Wait Until Page Contains Element" owner="AppiumLibrary">
+<msg time="2024-04-09T15:21:59.891841" level="INFO">xpath criteria: //android.widget.Button[@resource-id="com.safaricom.mpesa.lifestyle:id/"]</msg>
+<arg>${CONTINUE-BUTTON}</arg>
+<doc>Waits until element specified with `locator` appears on current page.</doc>
+<status status="PASS" start="2024-04-09T15:21:57.750528" elapsed="2.142374"/>
+</kw>
+<kw name="Click Element" owner="AppiumLibrary">
+<msg time="2024-04-09T15:21:59.899127" level="INFO">Clicking element '//android.widget.Button[@resource-id="com.safaricom.mpesa.lifestyle:id/"]'.</msg>
+<msg time="2024-04-09T15:22:00.190097" level="INFO">xpath criteria: //android.widget.Button[@resource-id="com.safaricom.mpesa.lifestyle:id/"]</msg>
+<arg>${CONTINUE-BUTTON}</arg>
+<doc>Click element identified by `locator`.</doc>
+<status status="PASS" start="2024-04-09T15:21:59.893637" elapsed="0.297448"/>
+</kw>
+<kw name="Wait Until Page Contains Element" owner="AppiumLibrary">
+<msg time="2024-04-09T15:22:00.810835" level="INFO">xpath criteria: //android.widget.TextView[@resource-id="com.safaricom.mpesa.lifestyle:id/" and @text="6"]</msg>
+<arg>${USER-DETAILS1}</arg>
+<doc>Waits until element specified with `locator` appears on current page.</doc>
+<status status="PASS" start="2024-04-09T15:22:00.191354" elapsed="0.619481"/>
+</kw>
+<kw name="Click Element" owner="AppiumLibrary">
+<msg time="2024-04-09T15:22:00.816975" level="INFO">Clicking element '//android.widget.TextView[@resource-id="com.safaricom.mpesa.lifestyle:id/" and @text="6"]'.</msg>
+<msg time="2024-04-09T15:22:01.618481" level="INFO">xpath criteria: //android.widget.TextView[@resource-id="com.safaricom.mpesa.lifestyle:id/" and @text="6"]</msg>
+<arg>${USER-DETAILS1}</arg>
+<doc>Click element identified by `locator`.</doc>
+<status status="PASS" start="2024-04-09T15:22:00.811821" elapsed="0.807144"/>
+</kw>
+<kw name="Wait Until Page Contains Element" owner="AppiumLibrary">
+<msg time="2024-04-09T15:22:02.401480" level="INFO">xpath criteria: //android.widget.TextView[@resource-id="com.safaricom.mpesa.lifestyle:id/" and @text="5"]</msg>
+<arg>${USER-DETAILS2}</arg>
+<doc>Waits until element specified with `locator` appears on current page.</doc>
+<status status="PASS" start="2024-04-09T15:22:01.619479" elapsed="0.782001"/>
+</kw>
+<kw name="Click Element" owner="AppiumLibrary">
+<msg time="2024-04-09T15:22:02.407477" level="INFO">Clicking element '//android.widget.TextView[@resource-id="com.safaricom.mpesa.lifestyle:id/" and @text="5"]'.</msg>
+<msg time="2024-04-09T15:22:02.849586" level="INFO">xpath criteria: //android.widget.TextView[@resource-id="com.safaricom.mpesa.lifestyle:id/" and @text="5"]</msg>
+<arg>${USER-DETAILS2}</arg>
+<doc>Click element identified by `locator`.</doc>
+<status status="PASS" start="2024-04-09T15:22:02.402403" elapsed="0.448233"/>
+</kw>
+<kw name="Wait Until Page Contains Element" owner="AppiumLibrary">
+<msg time="2024-04-09T15:22:03.622228" level="INFO">xpath criteria: //android.widget.TextView[@resource-id="com.safaricom.mpesa.lifestyle:id/" and @text="4"]</msg>
+<arg>${USER-DETAILS3}</arg>
+<doc>Waits until element specified with `locator` appears on current page.</doc>
+<status status="PASS" start="2024-04-09T15:22:02.850937" elapsed="0.771797"/>
+</kw>
+<kw name="Click Element" owner="AppiumLibrary">
+<msg time="2024-04-09T15:22:03.625764" level="INFO">Clicking element '//android.widget.TextView[@resource-id="com.safaricom.mpesa.lifestyle:id/" and @text="4"]'.</msg>
+<msg time="2024-04-09T15:22:04.461795" level="INFO">xpath criteria: //android.widget.TextView[@resource-id="com.safaricom.mpesa.lifestyle:id/" and @text="4"]</msg>
+<arg>${USER-DETAILS3}</arg>
+<doc>Click element identified by `locator`.</doc>
+<status status="PASS" start="2024-04-09T15:22:03.622734" elapsed="0.839434"/>
+</kw>
+<kw name="Wait Until Page Contains Element" owner="AppiumLibrary">
+<msg time="2024-04-09T15:22:05.825026" level="INFO">xpath criteria: //android.widget.TextView[@resource-id="com.safaricom.mpesa.lifestyle:id/" and @text="4"]</msg>
+<arg>${USER-DETAILS4}</arg>
+<doc>Waits until element specified with `locator` appears on current page.</doc>
+<status status="PASS" start="2024-04-09T15:22:04.462168" elapsed="1.363845"/>
+</kw>
+<kw name="Click Element" owner="AppiumLibrary">
+<msg time="2024-04-09T15:22:05.832118" level="INFO">Clicking element '//android.widget.TextView[@resource-id="com.safaricom.mpesa.lifestyle:id/" and @text="4"]'.</msg>
+<msg time="2024-04-09T15:22:06.917044" level="INFO">xpath criteria: //android.widget.TextView[@resource-id="com.safaricom.mpesa.lifestyle:id/" and @text="4"]</msg>
+<arg>${USER-DETAILS4}</arg>
+<doc>Click element identified by `locator`.</doc>
+<status status="PASS" start="2024-04-09T15:22:05.826013" elapsed="1.092114"/>
+</kw>
+<status status="PASS" start="2024-04-09T15:21:39.597562" elapsed="27.320565"/>
+</test>
+<status status="PASS" start="2024-04-09T15:21:38.978514" elapsed="27.941823"/>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="1" fail="0" skip="0" id="s1" name="Login">Login</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
